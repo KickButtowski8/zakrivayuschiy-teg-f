@@ -10,7 +10,6 @@
 
 */
 
-<<<<<<< HEAD
 /* Настройка страницы */
 .page {
   min-inline-size: 320px;
@@ -407,9 +406,4 @@ main {
   .dialog__text {
     inline-size: 100%;
   }
-=======
-.page {
-  min-inline-size: 320px;
-  min-block-size: 100dvb;
->>>>>>> f7b0427cb87ec3ef2aa9499423d2b7be93461623
 }
