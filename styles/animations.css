@@ -9,6 +9,7 @@
 ✦ button__text — для обозначения текстового элемента внутри кнопки
 
 */
+<<<<<<< HEAD
 /* Настройка анимации сердца */
 @keyframes heart-scale {
   0% {
@@ -103,3 +104,5 @@
   animation: sparks-opacity 0.3s ease-in 0.3s 1 both;
 }
 
+=======
+>>>>>>> f7b0427cb87ec3ef2aa9499423d2b7be93461623
