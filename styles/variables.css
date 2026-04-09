@@ -2,9 +2,9 @@
 
 :root {
     --font-family-main: 'Inter', sans-serif;
-    --font-family-accent: 'PressStart2P', sans-serif;
-    --font-weight-text: 400;
-    --font-weight-title: 785;
+    --font-family-accent: 'PressStart2P', fantasy;
+    --font-weight-text: 410;
+    --font-weight-title: 715;
     --contour-color: #000;
     --animation-fill-color: #ff0000;
     --accent-color: #000;

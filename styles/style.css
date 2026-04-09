@@ -37,7 +37,7 @@
   align-items: center;
   justify-content: center;
   background-color: var(--main-color);
-  min-height: 368px;
+  padding-block: 130px;
   margin-block-start: 100px;
 }
 
@@ -52,25 +52,27 @@
 
 .header__title-tag {
   font-family: var(--font-family-accent);
-  font-size: 65px;
+  font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
   font-weight: 400;
   text-transform: uppercase;
 }
 
 .header__title-text {
   font-family: var(--font-family-accent);
-  font-size: 23px;
+  font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
   font-weight: 400;
   text-transform: uppercase;
 }
 
 /* Настройка основного контента */
 main {
-  margin-block-start: 100px;
-  margin-block-end: 50px;
+  margin-block-start: 96px;
+  margin-block-end: 100px;
   display: flex;
   flex-direction: column;
   gap: 54px;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Настройка карточек */
@@ -145,7 +147,7 @@ main {
 .card__image {
   display: block;
   inline-size: 100%;
-  block-size: 696px;
+  min-block-size: 696px;
   object-fit: cover;
   object-position: center;
 }
@@ -279,6 +281,12 @@ main {
   gap: 30px;
 }
 
+.dialog__form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
 .dialog__content {
   display: flex;
   flex-direction: row;
@@ -312,7 +320,7 @@ main {
 }
 
 /* Настройка фильтров для изображений */
-.school_child-filter {
+.school-filter {
   filter: sepia(0.6) saturate(150%);
 }
 
@@ -320,7 +328,7 @@ main {
   filter: saturate(390%) contrast(90%) brightness(90%);
 }
 
-.first_project-filter {
+.project-filter {
   filter: saturate(390%) contrast(80%);
 }
 
@@ -351,11 +359,12 @@ main {
 /* Настройка медиазапросов для мобильных устройств */
 @media (width <= 375px) {
   main {
+    margin-block-start: 100px;
     gap: 50px;
   }
 
   .header {
-    min-height: 327px;
+    padding-block: 120px;
   }
 
   .header__title-tag {
@@ -367,7 +376,7 @@ main {
   }
 
   .card__image {
-    block-size: 371px;
+    min-block-size: 371px;
   }
 
   .card__title {
