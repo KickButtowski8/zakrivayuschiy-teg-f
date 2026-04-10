@@ -147,7 +147,7 @@ main {
 .card__image {
   display: block;
   inline-size: 100%;
-  min-block-size: 696px;
+  block-size: clamp(371px, calc(256.6px + 30.5vw), 696px);
   object-fit: cover;
   object-position: center;
 }
@@ -373,10 +373,6 @@ main {
 
   .header__title-text {
     font-size: 14px;
-  }
-
-  .card__image {
-    min-block-size: 371px;
   }
 
   .card__title {
